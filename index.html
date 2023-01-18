@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Gerador de senha</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="title">Gerador de Senha</h1>
+
+      <div class="content-password">
+        <p id="result">ASdds$%f145</p>
+        <span class="clip">Copy</span>
+      </div>
+
+      <div class="generator-password">
+        <div class="length-password">
+          <span>Quantidade de Caracteres</span>
+          <span class="number">10</span>
+        </div>
+
+        <div class="length">
+          <input id="range" type="range" max="20" min="0" value="10" />
+          <div class="progress-bar"></div>
+        </div>
+
+        <div class="options-password">
+          <span class="option"
+            ><input type="checkbox" /> Incluir letras maiúsculas</span
+          >
+          <span class="option"
+            ><input type="checkbox" /> Incluir letras minúsculas</span
+          >
+          <span class="option"><input type="checkbox" /> Incluir números</span>
+          <span class="option"><input type="checkbox" /> Incluir símbolos</span>
+        </div>
+
+        <div class="strength-password">
+          <span>Força</span>
+          <div class="strength">
+            <span id="forceName"></span>
+            <div class="bars">
+              <div  class="upper bar" checked></div>
+              <div  class="lower bar"></div>
+              <div  class="number bar"></div>
+              <div  class="symbol bar"></div>
+            </div>
+          </div>
+        </div>
+
+        <button class="button">GERAR SENHA</button>
+      </div>
+    </div>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
