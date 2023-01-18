@@ -23,12 +23,12 @@ body {
   flex-direction: column;
   align-items: center;
   gap: 1rem;
-width: 30%;
+  width: 30%;
 }
 
-.title{
-    font-size: 18px;
-    color: rgb(90, 90, 90);
+.title {
+  font-size: 18px;
+  color: rgb(90, 90, 90);
 }
 
 .content-password {
@@ -39,19 +39,19 @@ width: 30%;
   justify-content: space-between;
 }
 
- .clip {
+.clip {
   color: #78ffd6;
   cursor: pointer;
 }
 
-.clip:hover{
-    font-weight: 700;
+.clip:hover {
+  font-weight: 700;
 }
 
 .content-password p {
   color: rgb(233, 233, 233);
   font-weight: 700;
-  font-size: .8rem;
+  font-size: 0.8rem;
   letter-spacing: 1px;
 }
 
@@ -132,7 +132,7 @@ width: 30%;
 .options-password .option {
   text-transform: capitalize;
   color: rgb(233, 233, 233);
-  font-size: .8rem;
+  font-size: 0.8rem;
   font-weight: 600;
 }
 
@@ -207,9 +207,6 @@ width: 30%;
   height: 1.4rem;
 }
 
-
-
-
 .generator-password .button {
   width: 100%;
   padding: 0.8rem 1rem;
@@ -223,3 +220,16 @@ width: 30%;
 .button:hover {
   background-color: #47fac4;
 }
+
+@media (max-width: 768px) {
+  .container {
+    width: 50%;
+  }
+}
+
+@media (max-width: 425px) {
+  .container {
+    width: 90%;
+  }
+}
+
